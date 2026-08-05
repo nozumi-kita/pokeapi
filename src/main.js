@@ -24,7 +24,7 @@ const pokeFunction = async () => {
     const pokeType = document.createElement("p");
     pokeType.textContent = `Type: ${data.types.map((typeInfo) => typeInfo.type.name).join(", ")}`;
 
-    const id = result.append(pokeName, pokeImg, pokeId, pokeType);
+    result.append(pokeName, pokeImg, pokeId, pokeType);
   } catch (error) {
     alert("通信に失敗しました");
   }
