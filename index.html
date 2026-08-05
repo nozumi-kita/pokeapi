@@ -3,10 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
     <title>pokeapi</title>
   </head>
   <body>
-    <div id="app"></div>
+    <h1>Pokemon Database</h1>
+    <form class="form" action="submit">
+      <input type="text" placeholder="Pokemon Name">
+      <button type="submit">Get Data</button>
+    </form>
+    <div class="result">
+      
+    </div>
+
+    <a href="https://wiki.pokemonwiki.com/wiki/%e3%83%9d%e3%82%b1%e3%83%a2%e3%83%b3%e3%81%ae%e5%a4%96%e5%9b%bd%e8%aa%9e%e5%90%8d%e4%b8%80%e8%a6%a7" target="_blank">You can find Pokemon Names in English here.</a>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
