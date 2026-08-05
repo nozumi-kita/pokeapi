@@ -8,13 +8,7 @@ const pokeFunction = async () => {
 
   try {
     const url = `https://pokeapi.co/api/v2/pokemon/${inputName}`;
-
     const response = await fetch(url);
-
-    if (!response.ok) {
-      throw new Error("通信に失敗しました");
-    }
-
     const data = await response.json();
 
     const pokeName = document.createElement("p");
@@ -32,7 +26,7 @@ const pokeFunction = async () => {
 
     const id = result.append(pokeName, pokeImg, pokeId, pokeType);
   } catch (error) {
-    console.log(error);
+    alert("通信に失敗しました");
   }
 };
 
