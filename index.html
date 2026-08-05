@@ -9,12 +9,14 @@
   <body>
     <h1>Pokemon Database</h1>
     <form class="form" id="form-js">
-      <input id="poke-name-js" type="text" placeholder="Pokemon Name or ID">
-      <button type="submit">Get Data</button>
+      <input class="input" id="poke-name-js" type="text" placeholder="Pokemon Name or ID">
+      <div class="shiny">
+        <label for="shiny">Shiny</label>
+        <input type="checkbox" name="shiny" id="shiny-js" />
+      </div>
+      <button class="submit" type="submit">Get Data</button>
     </form>
-    <div class="result" id="result-js">
-      
-    </div>
+    <div class="result" id="result-js">Results will appear here.</div>
 
     <a href="https://wiki.pokemonwiki.com/wiki/%e3%83%9d%e3%82%b1%e3%83%a2%e3%83%b3%e3%81%ae%e5%a4%96%e5%9b%bd%e8%aa%9e%e5%90%8d%e4%b8%80%e8%a6%a7" target="_blank">You can find Pokemon Names in English here.</a>
     <script type="module" src="/src/main.js"></script>

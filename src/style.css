@@ -21,6 +21,24 @@ a:active {
   color: rgb(86, 119, 187);
 }
 
+.shiny {
+  border: 1px solid;
+  border-color: black;
+  margin: 0 5px;
+}
+
+.form {
+  display: flex;
+}
+
+.input {
+  margin: 0 5px;
+}
+
+.submit {
+  margin: 0 5px;
+}
+
 .result {
   margin-top: 10px;
   padding: 10px;
