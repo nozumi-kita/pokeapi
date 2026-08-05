@@ -31,10 +31,12 @@ const pokeFunction = async () => {
 };
 
 const renderPoke = (data, result, evolve = "") => {
+  const evolveFrom = document.createElement("p");
   if (evolve) {
-    const evolveFrom = document.createElement("p");
     evolveFrom.textContent = evolve;
+    evolveFrom.style.borderTop = "1px solid #000";
   }
+
   const pokeName = document.createElement("p");
   pokeName.textContent = `Name: ${data.name}`;
 
@@ -48,7 +50,7 @@ const renderPoke = (data, result, evolve = "") => {
   const pokeType = document.createElement("p");
   pokeType.textContent = `Type: ${data.types.map((typeInfo) => typeInfo.type.name).join(", ")}`;
 
-  result.append(evolve, pokeName, pokeImg, pokeId, pokeType);
+  result.append(evolveFrom, pokeName, pokeImg, pokeId, pokeType);
 };
 
 form.addEventListener("submit", (event) => {
