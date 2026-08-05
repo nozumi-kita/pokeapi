@@ -9,6 +9,18 @@ h1 {
   margin-bottom: 10px;
 }
 
+a:visited {
+  color: #0000EE;
+}
+
+a:hover {
+	color: rgb(55, 6, 170);
+}
+
+a:active {
+  color: rgb(86, 119, 187);
+}
+
 .result {
   margin-top: 10px;
   padding: 10px;
